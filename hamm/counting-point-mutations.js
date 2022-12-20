@@ -1,3 +1,4 @@
+//https://rosalind.info/problems/hamm/
 function countMutation(datasetS, datasetT){
     return datasetS
     .split("")

@@ -1,3 +1,4 @@
+//https://rosalind.info/problems/prot/
 const codonMap = {
 UUU:"F",CUU:"L",AUU:"I",GUU:"V",
 UUC:"F",CUC:"L",AUC:"I",GUC:"V",

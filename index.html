@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEST BEFORE SUBMIT</title>
+</head>
+<body>
+    <textarea id="dataset" cols="150" rows="30"></textarea>
+    <p></p>
+    <button id="submit">SUBMIT</button>
+    <p></p>
+    <textarea id="result" cols="150" rows="10"></textarea>
+    <script type="module">
+        import main from './splc/rna-splicing.mjs';
+
+        document.querySelector("#submit").addEventListener('click', ()=>document.querySelector('#result').value = main(document.querySelector("#dataset").value));
+    </script>
+</body>
+</html>
+<!--
+npm i http-server -g
+npx http-server
+-->

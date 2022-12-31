@@ -23,3 +23,4 @@ export default dataset=>{
     })
     .join(' ');
 }
+export {randomString};

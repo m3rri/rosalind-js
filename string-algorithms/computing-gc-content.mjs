@@ -40,3 +40,4 @@ function computingMaxGCContent(dataset){
 }
 
 export default dataset=>computingMaxGCContent(dataset);
+export {fastaToSeqListHasSeqName};

@@ -20,10 +20,12 @@
  * number of nodes : "n"
  * "n-1" edges are required to make tree
  */
+const getRequiredEdges = numberNode => numberNode-1;
 export default dataset=>{
     const data = dataset.split('\n');
     const n = data[0];
     const edges = data.splice(1);
 
-    return (n-1)-edges.length;
+    return getRequiredEdges(n)-edges.length;
 }
+export {getRequiredEdges};
